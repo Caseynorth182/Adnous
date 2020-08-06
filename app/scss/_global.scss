@@ -14,9 +14,6 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-body {
-    font-family: "OpenSans", sans-serif;
-}
 
 ul,
 ol,
@@ -35,16 +32,43 @@ h6 {
 a {
     text-decoration: none;
 }
+
 button:focus,
 input:focus {
     outline: transparent;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.anim-link {
+    transition: all 0.3s;
+    &:focus,
+    &:hover {
+        color: $green;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
 .container-fluid,
 .container {
     max-width: 1700;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .container {
     max-width: 1200px;
 }

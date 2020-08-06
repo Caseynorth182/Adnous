@@ -1,0 +1,47 @@
+.button {
+    display: block;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s;
+    cursor: pointer;
+    &__login-links {
+        min-width: 79px;
+        padding: 11px 20px 9px;
+        color: $white;
+        font-size: 13px;
+        background-color: transparent;
+        border: 1px solid $white;
+        &+& {
+            margin-left: 20px;
+        }
+        &--active {
+            background-color: #fff;
+            color: rgb(84, 128, 221);
+        }
+    }
+    &__promo-link {
+        display: inline-block;
+        position: relative;
+        max-width: 229px;
+        width: 100%;
+        padding: 21px 15px 20px 37px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 26px;
+        background-color: $white;
+        text-align: left;
+        color: rgb(37, 182, 194);
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.28px;
+        &:before {
+            content: "\e902";
+            position: absolute;
+            @include icomoon;
+            right: 20px;
+            top: 14px;
+            font-size: 25px;
+        }
+    }
+    &__social-btn {}
+}

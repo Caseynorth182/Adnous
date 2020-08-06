@@ -1,20 +1,168 @@
 @import "vars.scss";
 @import "fonts.scss";
 @import "global.scss";
-
-//-----------------------------------------------------------------------------------------------------------
+@import "button.scss";
+// -----------------------------------------------------------------------------------------------------------
 //
 //                                                    START CODE
 //
-//-----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
 .promo {
-    background-image: url(../images/promo/promo_bg.jpg);
+    background-image: url("../img/promo/promo_bg.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__content {
+        padding: 171px 0 111px;
+    }
+    &__title {
+        max-width: 734px;
+        width: 100%;
+        color: $white;
+        font-size: 63px;
+        line-height: 78px;
+        padding: 0 10px 47px 0;
+        font-weight: 400;
+    }
+    &__subtitle {
+        width: 650px;
+        color: $white;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        &+& {
+            padding-top: 28px;
+        }
+    }
+    &__main-link {
+        margin: 40px 0 100px;
+    }
+    &__company {
+        list-style-type: none;
+        display: flex;
+    }
+    &__company-item {
+        max-width: 129px;
+        width: 100%;
+        &+& {
+            margin-left: 35px;
+        }
+    }
 }
 
-//-----------------------------------------------------------------------------------------------------------
+.social-btn {
+    &__link {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__item {
+        border-radius: 100%;
+        display: inline-block;
+        background-color: rgb(20, 199, 87);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(-27deg, rgb(75, 186, 250) 0%, rgb(35, 225, 200) 100%);
+        font-size: 0;
+        &+& {
+            margin-left: 23px;
+        }
+    }
+}
+
+.header {
+    &__inner {
+        display: flex;
+        flex-basis: 80%;
+        justify-content: space-around;
+        align-content: center;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* //NOTE HEADER MAIN MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    max-width: 963px;
+    justify-content: space-between;
+    &__item {
+        &--drop {
+            position: relative;
+            padding: 10px 30px 10px 0;
+            &:hover .dropdown {
+                display: block;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        color: $white;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 20px 0;
+        &--drop {
+            &:before {
+                content: "\e900";
+                position: absolute;
+                @include icomoon;
+                right: 0;
+                font-size: 20px;
+                top: 34%;
+            }
+        }
+    }
+}
+
+
+/* //NOTE DROPDOWN MENU */
+
+.dropdown {
+    display: none;
+    position: absolute;
+    padding: 27px;
+    min-width: 245px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    bottom: 10;
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+        display: block;
+        position: relative;
+        padding: 10px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        &:before {
+            content: "\e904";
+            position: absolute;
+            @include icomoon;
+            left: 0;
+            top: 16%;
+            color: $dark;
+            font-size: 20px;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE
 //
-//-----------------------------------------------------------------------------------------------------------
-
+// -----------------------------------------------------------------------------------------------------------
 @import "media.scss";
