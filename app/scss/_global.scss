@@ -54,11 +54,15 @@ body {
     }
 }
 
+.anim {
+    transition: all 0.4s;
+}
+
 .hover {
     transition: all 0.3s;
     &:hover,
     &:focus {
-        background-image: linear-gradient(-27deg, rgb(75, 186, 250) 0%, rgba(35, 225, 200, 0.5) 100%);
+        background-color: rgba(75, 186, 250, 0.5);
     }
 }
 

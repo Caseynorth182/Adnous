@@ -125,7 +125,7 @@
                     &:before {
                         content: "\e900";
                         position: absolute;
-                        @include icomoon;
+                        font-family: 'icomoon' !important;
                         right: 0;
                         font-size: 20px;
                         top: 34%;
@@ -183,6 +183,23 @@
                 color: $dark;
                 font-size: 15px;
                 line-height: 30px;
+            }
+            &__link {
+                display: block;
+                min-width: 143px;
+                height: 42px;
+                margin: 0 auto;
+                padding: 13px 22px;
+                border-radius: 21px;
+                border: 1px solid rgb(226, 235, 241);
+                background-color: white;
+                transition: all 0.3s;
+                color: $dark;
+                font-size: 13px;
+                letter-spacing: 0.26px;
+                &:hover {
+                    color: #fff;
+                }
             }
         }
         /* -------------------------------------------------------------------------- */
@@ -394,6 +411,55 @@
                     text-transform: uppercase;
                     letter-spacing: -2.1px;
                 }
+            }
+        }
+        /*  //CASE ITEMS SECTION */
+        
+        .case {
+            padding: 110px 0 14px;
+            &__descr-line {
+                margin-bottom: 78px;
+            }
+            &__wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-left: -30px;
+            }
+            &__item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex-basis: calc(33.3333% - 30px);
+                min-height: 438px;
+                padding: 45px 30px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                background-color: rgb(255, 255, 255);
+                margin-left: 30px;
+                margin-bottom: 30px;
+                text-align: center;
+                &:hover {
+                    box-shadow: 0 0 15px rgba(11, 215, 252, 0.8);
+                }
+            }
+            &__icon-circle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 96px;
+                height: 96px;
+                margin: 0 auto;
+                border-radius: 100%;
+                background-color: rgb(20, 199, 87);
+                background-image: linear-gradient(-27deg, rgb(75, 186, 250) 0%, rgb(11, 215, 252) 100%);
+            }
+            &__icon {
+                color: rgb(255, 255, 255);
+                font-size: 50px;
+            }
+            &__descr {
+                padding: 0 30px;
             }
         }
         
