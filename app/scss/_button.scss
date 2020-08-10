@@ -19,7 +19,8 @@
             color: rgb(84, 128, 221);
         }
     }
-    &__promo-link {
+    &__promo-link,
+    &__contact {
         display: inline-block;
         position: relative;
         max-width: 229px;
@@ -34,6 +35,11 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.28px;
+        cursor: pointer;
+        &--blue {
+            background-color: rgb(11, 215, 252);
+            color: $white;
+        }
         &:before {
             content: "\e902";
             position: absolute;
@@ -42,5 +48,10 @@
             top: 14px;
             font-size: 25px;
         }
+    }
+    &__contact {
+        background-color: rgb(11, 215, 252);
+        color: $white;
+        border: none;
     }
 }

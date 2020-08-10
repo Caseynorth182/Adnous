@@ -26,6 +26,7 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 a {
@@ -103,4 +104,20 @@ body {
     font-size: 32px;
     font-weight: 400;
     text-align: center;
+}
+
+//NOTE BLUE ICON FONTAWESOME PRO
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    background-color: rgb(20, 199, 87);
+    background-image: linear-gradient(-27deg, rgb(75, 186, 250) 0%, rgb(11, 215, 252) 100%);
+    &__icon {
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+    }
 }

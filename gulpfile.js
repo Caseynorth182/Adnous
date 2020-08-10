@@ -43,7 +43,8 @@ gulp.task("script", function() {
             /*  "node_modules/rateyo/src/jquery.rateyo.js", */
             /*  "node_modules/ion-rangeslider/js/ion.rangeSlider.js", */
             "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
-            "node_modules/fontawesome-pro-5.8.2-web/js/all.js",
+            "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js",
+            "node_modules/fontawesome-pro-5.8.2-web/all.js",
             /* "node_modules/swiper/swiper.js", */
             /* "node_modules/jquery-form-styler/dist/jquery.formstyler.js",  */
         ])
@@ -60,7 +61,8 @@ gulp.task("style", function() {
             /* "node_modules/rateyo/src/jquery.rateyo.css", */
             /* "node_modules/ion-rangeslider/css/ion.rangeSlider.css", */
             "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
-            "node_modules/fontawesome-pro-5.8.2-web/css/all.css",
+            "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
+            "node_modules/fontawesome-pro-5.8.2-web/all.css",
             /* "node_modules/swiper/swiper.css", */
             /* "node_modules/jquery-form-styler/dist/jquery.formstyler.css",  */
         ])
