@@ -405,15 +405,17 @@
                     left: 0;
                     bottom: 36px;
                     color: rgb(75, 186, 250);
-                    font-family: "Montserrat";
                     font-size: 42px;
-                    font-weight: bold;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
                     text-transform: uppercase;
                     letter-spacing: -2.1px;
                 }
             }
         }
-        /*  //CASE ITEMS SECTION */
+        /* -------------------------------------------------------------------------- */
+        /*                            //CASE ITEMS SECTION                            */
+        /* -------------------------------------------------------------------------- */
         
         .case {
             padding: 110px 0 14px;
@@ -460,6 +462,134 @@
             }
             &__descr {
                 padding: 0 30px;
+            }
+        }
+        /* -------------------------------------------------------------------------- */
+        /*                              //SECTION SUPPORT                             */
+        /* -------------------------------------------------------------------------- */
+        
+        .support {
+            padding: 180px 0 60px;
+            background-image: url(../img/support/bg.webp);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            &__text-line {
+                text-align: center;
+                margin-top: 34px;
+                margin-bottom: 85px;
+            }
+        }
+        /*  //ANCHOR SLIDER */
+        /*      .slider {
+            &__card {}
+            &__img {
+                display: inline-block;
+                position: absolute;
+                top: -49px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 96px;
+                height: 96px;
+                border: 3px solid rgb(255, 255, 255);
+                background-color: rgb(176, 176, 176);
+                border-radius: 100%;
+            }
+            &__name {
+                display: block;
+                padding: 0 25px 20px 0;
+                border-bottom: 1px solid rgb(229, 229, 229);
+            }
+            &__descr {
+                margin-top: 20px;
+                padding-right: 20px;
+            }
+        } */
+        
+        .slider {
+            overflow: hidden;
+            padding: 0 15px;
+            transition: all 0.3s;
+            outline-color: transparent;
+            &__item {
+                position: relative;
+                min-height: 290px;
+                padding: 0 15px;
+            }
+            &__card {
+                display: flex;
+                position: absolute;
+                flex-direction: column;
+                padding: 69px 30px 27px;
+                top: 49px;
+                width: 371px;
+                min-height: 245px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                background-color: rgb(255, 255, 255);
+            }
+            &__img {
+                position: absolute;
+                top: -49px;
+                position: absolute;
+                top: -49px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 96px;
+                height: 96px;
+                border: 3px solid rgb(255, 255, 255);
+                background-color: rgb(176, 176, 176);
+                border-radius: 100%;
+            }
+            &__name {
+                display: block;
+                padding: 0 25px 20px 0;
+                border-bottom: 1px solid rgb(229, 229, 229);
+            }
+            &__text {
+                margin-top: 20px;
+                padding-right: 20px;
+            }
+            //NOTE SLICK SLIDER
+            .slick-list {
+                overflow: visible;
+            }
+            .slick-slide.slick-active {
+                margin: 0 auto;
+            }
+            .slick-slide {
+                opacity: 0;
+            }
+            .slick-slide.slick-active {
+                opacity: 1;
+            }
+            .slick-dots {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                margin-top: 70px;
+                cursor: pointer;
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+                }
+                li.slick-active {
+                    button {
+                        width: 8px;
+                        height: 8px;
+                        background-color: rgb(11, 215, 252);
+                    }
+                }
+                button {
+                    padding: 0;
+                    border: none;
+                    background-color: rgb(178, 190, 197);
+                    border-radius: 100%;
+                    font-size: 0;
+                    width: 6px;
+                    height: 6px;
+                }
             }
         }
         

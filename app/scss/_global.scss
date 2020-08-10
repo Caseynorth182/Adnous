@@ -12,7 +12,6 @@ html,
 body {
     height: 100%;
     position: relative;
-    /* overflow-x: hidden; */
 }
 
 ul,
@@ -34,6 +33,7 @@ a {
 }
 
 button:focus,
+a,
 input:focus {
     outline: transparent;
 }
