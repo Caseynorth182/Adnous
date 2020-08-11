@@ -47,16 +47,32 @@ body {
     font-size: 16px;
 }
 
+#upbutton {
+    position: fixed;
+    display: none;
+    height: 80px;
+    width: 80px;
+    right: 30px;
+    bottom: 30px;
+    color: rgb(75, 186, 250);
+    cursor: pointer;
+    word-wrap: none;
+    z-index: 999;
+    .upbutton-arrow {
+        font-size: 60px !important;
+    }
+}
+
+.anim {
+    transition: all 0.3s;
+}
+
 .anim-link {
     transition: all 0.3s;
     &:focus,
     &:hover {
         color: $green;
     }
-}
-
-.anim {
-    transition: all 0.4s;
 }
 
 .hover {
