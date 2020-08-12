@@ -21,7 +21,8 @@
     }
     &__promo-link,
     &__contact,
-    &__play-video {
+    &__play-video,
+    &__register {
         display: inline-block;
         position: relative;
         max-width: 229px;
@@ -72,6 +73,7 @@
     background-color: rgb(11, 215, 252);
     border: none;
     z-index: 1;
+    border-radius: 26px;
     &:after {
         position: absolute;
         content: "";

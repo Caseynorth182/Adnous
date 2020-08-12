@@ -16,6 +16,7 @@ $(function() {
         arrows: false,
         pauseOnHover: true,
         autoplay: true,
+        autoplaySpeed: 1000,
         dots: true,
     });
 
@@ -27,6 +28,7 @@ $(function() {
         pauseOnHover: true,
         arrows: false,
         autoplay: true,
+        autoplaySpeed: 1000,
         dots: true,
     });
     //COMPANIES SLIDER
@@ -36,8 +38,10 @@ $(function() {
         slidesToScroll: 1,
         pauseOnHover: true,
         arrows: false,
+        autoplaySpeed: 1000,
         autoplay: true,
     });
+
     //SCROLL MODIFIER
     (function($) {
         $(window).on('load', function() {
