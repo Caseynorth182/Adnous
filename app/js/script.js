@@ -7,6 +7,22 @@ $(function() {
             }
         }
     });
+    //BLOG HEADER STICK MENU
+    var scrolled;
+    window.onscroll = function() {
+        scrolled = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrolled > 245) {
+            $(".header").css({
+                "background": " rgba(84, 128, 221, 0.8)"
+            })
+        }
+        if (245 > scrolled) {
+            $(".header").css({
+                "background": " rgba(255, 255, 255, 0.1)"
+            })
+        }
+
+    }
 
     //SUPPORT SLICK SLIDER
     $('.supprot__slider').slick({
@@ -47,7 +63,6 @@ $(function() {
         $(window).on('load', function() {
             $('el').mCustomScrollbar({
                 theme: 'rounded-dots',
-
             });
         });
     })(jQuery);
