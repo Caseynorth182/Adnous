@@ -22,6 +22,9 @@
         &--small {
             padding: 149px 0 0;
         }
+        &--tools {
+            padding: 120px 0 0
+        }
     }
     &__title {
         max-width: 734px;
@@ -36,11 +39,16 @@
         display: block;
         max-width: 771px;
         margin: 0 auto;
+        padding-bottom: 15px;
         color: $white;
         text-align: center;
         font-size: 30px;
         font-weight: 400;
         letter-spacing: -0.6px;
+        &--tools {
+            font-size: 38px;
+            letter-spacing: -0.76px;
+        }
     }
     &__subtitle {
         width: 650px;
@@ -51,6 +59,17 @@
         &+& {
             padding-top: 28px;
         }
+    }
+    &__subtitle-small {
+        display: block;
+        margin: 0 auto;
+        padding: 0 100px 25px;
+        text-align: center;
+        color: $white;
+        font-size: 15px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: 7.5px;
     }
     &__main-link {
         margin: 40px 0 100px;
@@ -1230,6 +1249,9 @@
     }
 }
 
+
+/* //NOTE COPYRIGHT */
+
 .copyright {
     padding: 37px 0;
     border-top: 1px solid #e2ebf1;
@@ -1294,6 +1316,9 @@
     }
 }
 
+
+/* //NOTE ASIDE  */
+
 .aside {
     &__title {
         position: relative;
@@ -1345,6 +1370,130 @@
         color: $dark;
         font-size: 13px;
         line-height: 22px;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                       //SECTION OPTIONS  (TOOLS PAGE)                      */
+
+
+/* -------------------------------------------------------------------------- */
+
+.options {
+    &__blog {
+        padding: 86px 0 81px;
+        &--white {
+            background-color: $white;
+        }
+        &--grey {
+            background-color: rgba(235, 247, 252, 0.5);
+        }
+    }
+    &__inner {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    &__img {
+        max-width: 410px;
+        max-height: 310px;
+    }
+    &__content {
+        max-width: 670px;
+        width: 100%;
+    }
+    &__descr {
+        padding-bottom: 30px;
+    }
+    &__button {
+        color: #fff;
+        width: 166px;
+        height: 47px;
+        padding: 0;
+        margin-bottom: 35px;
+        max-width: 166px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        &:before {
+            top: 9px;
+        }
+    }
+    &__question {
+        display: inline-block;
+        color: $dark;
+        padding-bottom: 40px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    //accordion accord
+}
+
+//NOTE ACCORD
+.accord {
+    position: relative;
+    padding-left: 50px;
+    &__item {
+        margin-bottom: 40px;
+    }
+    &__visible-checkbox {
+        position: absolute;
+        left: 0;
+        font-size: 0;
+        &:before,
+        &:after {
+            text-align: center;
+            position: absolute;
+            font-size: 17px;
+            width: 8px;
+            height: 14px;
+            top: 50%;
+            left: 50%;
+            width: 27px;
+            height: 27px;
+            border-radius: 100%;
+            color: $white;
+            border: 2px solid rgb(218, 229, 239);
+            transition: all 0.7s;
+        }
+        &:before {
+            content: "+";
+            background-color: rgb(186, 196, 205);
+            opacity: 1;
+        }
+        &:after {
+            content: "-";
+            font-size: 17px;
+            background-image: linear-gradient(17deg, rgba(101, 88, 224, 0.76) 0%, rgba(38, 239, 213, 0.76) 99%, rgba(38, 239, 213, 0.76) 100%);
+            opacity: 0;
+        }
+    }
+    &__input {
+        appearance: none;
+        &:checked+.accord__visible-checkbox:after {
+            opacity: 1;
+        }
+        &:checked+.accord__visible-checkbox:before {
+            opacity: 0;
+        }
+    }
+    &__trigger {
+        font-size: 16px;
+        padding: 5px 50px 5px 0;
+    }
+    &__content {
+        display: none;
+        padding: 10px 35px 10px 0;
+        color: $dark;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
     }
 }
 

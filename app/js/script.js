@@ -21,9 +21,14 @@ $(function() {
                 "background": " rgba(255, 255, 255, 0.1)"
             })
         }
-
     }
 
+    //ACCORDION ON TOOLS PAGE
+    $(".accord__trigger").on("click",
+        function() {
+            $(this).next(".accord__content").slideToggle(500);
+        }
+    );
     //SUPPORT SLICK SLIDER
     $('.supprot__slider').slick({
         infinite: true,
@@ -93,4 +98,6 @@ $(function() {
             scrollTop: 0
         }, 300);
     });
+
+
 });

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+    <div class="content-site">
+        <!--  //SECTION HEADER -->
+        <section class="promo promo--sm">
+            <header class=" promo__header header header--blog">
+                <div class="container-fluid">
+                    <div class="header__inner">
+                        <a class="header__logo" href="index.html">
+                            <img class="header__img" src="img/logo.png" alt="mainLogo" />
+                        </a>
+                        <!-- //ANCHOR HEADER MENU -->
+                        <ul class="header__menu menu">
+                            <li class="menu__item">
+                                <a class="menu__link anim-link menu__link anim-link--active" href="index.html">
+                                    О сервисе
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link anim-link" href="#">
+                                    Варианты продвижения
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link anim-link" href="#">
+                                    Отзывы клиентов
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link anim-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link anim-link" href="#">
+                                    Цены
+                                </a>
+                            </li>
+                            <li class="menu__item menu__item--drop">
+                                <span class="menu__link anim-link menu__link--drop ">
+                                    Ещё
+                                </span>
+
+                                <!--   //ANCHOR DROPDOWN MENU -->
+                                <div class="header__dropdown dropdown">
+                                    <ul class="dropdown__list">
+                                        <li class="dropdown__item">
+                                            <a class="dropdown__link dropdown__link--active" href="#">
+                                                Вопрос-ответ
+                                            </a>
+                                        </li>
+                                        <li class="dropdown__item">
+                                            <a class="dropdown__link" href="#">
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- //ANCHOR LOGIN BUTTONS -->
+                        <div class="header__btns">
+                            <button class="button header__button button__login-links button__login-links--active">
+                                Вход
+                            </button>
+                            <button class="button header__button button__login-links">
+                                Регистрация
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- //NOTE PROMO CONTENT SMALL -->
+            <div class="promo__content promo__content--tools">
+                <h2 class="promo__title-small promo__title-small--tools">
+                    Инструменты продвижения
+                </h2>
+                <span class="promo__subtitle-small">
+                    внедряй и зарабатывай
+                </span>
+            </div>
+        </section>
+
+        <main class=" site-content ">
+            <!--  //SECTION OPTIONS BLOG -->
+            <section class="options">
+                <!--  //ANCHOR RETARGETING -->
+                <article class="options__blog options__blog--white">
+                    <div class="container">
+                        <!--     //NOTE -->
+                        <div class="options__inner">
+                            <img class="options__img" src="img/options/retargeting.webp" alt="retargeting">
+                            <div class="options__content">
+                                <span class="options__note item__note">
+                                    ретаргетинг
+                                </span>
+                                <div class="options__title-big item__title-big">
+                                    Возвращайте тех, кто ушёл без покупки
+                                </div>
+                                <p class="options__descr item__descr">
+                                    С помощью ретаргетинга Вы сможете показывать Вашу рекламу покупателям, которые уже посетили Ваш сайт, но еще не сделали покупок.
+                                </p>
+                                <p class="options__descr item__descr">
+                                    Например, Вы можете напомнить о себе Вашем потенциальному клиенту, который был у вас на сайте в предыдущие 30 дней, добавил товары в корзину, но не оплатил.
+                                </p>
+                                <button class="options__button button__options btn-anim">
+                                    Начать
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //ANCHOR ACCORDION MENU -->
+                        <span class="options__question">
+                            Часто задаваемые вопросы
+                        </span>
+                        <div class="options__accord accord">
+                            <!-- //ANCHOR WHAT TO DO ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_2" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_2">
+                                    Что мне сделать, чтобы запустить ретаргетинг?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR HOW TO HELP ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_3" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_3">
+                                    Как ретаргетинг может помочь моему бизнесу?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR YOU CAN HELP FIXED ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_1" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_1">
+                                    Вы можете помочь настроить ретаргетинг на моем сайте?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <!--  //ANCHOR DYNAMIC RETARGETING -->
+                <article class="options__blog options__blog--grey">
+                    <div class="container">
+                        <!--     //NOTE -->
+                        <div class="options__inner">
+                            <img class="options__img" src="img/options/dynamic.webp" alt="DYNAMIC retargeting">
+                            <div class="options__content">
+                                <span class="options__note item__note">
+                                    Динамический ретаргетинг
+                                </span>
+                                <div class="options__title-big item__title-big">
+                                    Помогите клиенту сделать выбор
+                                </div>
+                                <p class="options__descr item__descr">
+                                    Данный тип рекламы как нельзя лучше подходит сайтам, где представлены множество различных товаров. Например, интернет магазин.
+                                </p>
+                                <p class="options__descr item__descr">
+                                    Например, Вы можете напомнить о себе Вашем потенциальному клиенту, который был у вас на сайте в предыдущие 30 дней, добавил товары в корзину, но не оплатил.
+                                </p>
+                                <button class="options__button button__options btn-anim">
+                                    Начать
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //ANCHOR ACCORDION MENU -->
+                        <span class="options__question">
+                            Часто задаваемые вопросы
+                        </span>
+                        <div class="options__accord accord">
+                            <!-- //ANCHOR WHAT TO DO ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_4" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_4">
+                                    Что такое динамический ретаргетинг?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR HOW TO START ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_5" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_5">
+                                    Реклама интернет магазина, с чего начать?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR HOW TO DYNAMIC ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_6" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_6">
+                                    Как запустить динамический ретаргетинг в ADNous?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR ONE CODE ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_7" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_7">
+                                    Один код для установки на страницы сайта, почему так?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!--  //ANCHOR CONTEXTUAL ADVERTISING -->
+                <article class="options__blog options__blog--white">
+                    <div class="container">
+                        <!--     //NOTE -->
+                        <div class="options__inner">
+                            <img class="options__img" src="img/options/contecstual.webp" alt="contecstual retargeting">
+                            <div class="options__content">
+                                <span class="options__note item__note">
+                                    контекстная реклама
+                                </span>
+                                <div class="options__title-big item__title-big">
+                                    Спешите навстречу клиентам, которые уже ищут Вас
+                                </div>
+                                <p class="options__descr item__descr">
+                                    Показывайте Ваши объявления пользователям, которые в данный момент ищут ваши товары через поисковые запросы либо делали это пару часов назад.
+                                </p>
+                                <p class="options__descr item__descr">
+                                    Например, пользователь ввел в поиск «корм для собак». Ваша реклама будет показана в поисковой выдаче. Вероятность клика по такой рекламе высокая.
+                                </p>
+                                <button class="options__button button__options btn-anim">
+                                    Начать
+                                </button>
+                            </div>
+                        </div>
+                        <!-- //ANCHOR ACCORDION MENU -->
+                        <span class="options__question">
+                            Часто задаваемые вопросы
+                        </span>
+                        <div class="options__accord accord">
+                            <!-- //ANCHOR WHAT IS CONTECT adn ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_8" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_8">
+                                    Что такое контекстная реклама?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR FAQ ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_9" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_9">
+                                    Чем полезна контекстная реклама?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR WHAT IS CTR ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_10" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_10">
+                                    Что такое CTR и важен ли он?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR HIGH CTR BUT LOW CONVERSION ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_11" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_11">
+                                    У меня высокий CTR, но низкая конверсия, что делать?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR CLICK PRICE ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_12" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_12">
+                                    Какая должна быть цена за клик в контекстной рекламе?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!--  //ANCHOR CONTEXTUAL ADVERTISING -->
+                <article class="options__blog options__blog--grey">
+                    <div class="container">
+                        <!--     //NOTE -->
+                        <div class="options__inner">
+                            <img class="options__img" src="img/options/media.webp" alt="media">
+                            <div class="options__content">
+                                <span class="options__note item__note">
+                                    медийная реклама
+                                </span>
+                                <div class="options__title-big item__title-big">
+                                    Вызывайте интерес и привлекайте внимание
+                                </div>
+                                <p class="options__descr item__descr">
+                                    Практически любой вид рекламы в интернете можно назвать медийной, в том числе видео, аудио, тексты и тд. В adnous мы решили разделить эти виды и под медийной рекламой мы подразумеваем: а) Баннерную и б) Текстово-графическую. Причем последнее также обязательно
+                                    включает картинки-тизеры. Баннеры могут быть как статичные, так и с анимацией.
+                                </p>
+                                <button class="options__button button__options btn-anim">
+                                    Начать
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- //ANCHOR ACCORDION MENU -->
+                        <span class="options__question">
+                            Часто задаваемые вопросы
+                        </span>
+                        <div class="options__accord accord">
+                            <!-- //ANCHOR ABOUT MY MARKETPLACE adn ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_13" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_13">
+                                    По какому принципу будут показываться мои объявления?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR WHERE MEDIA ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_14" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_14">
+                                    Где будет показана медийная реклама?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR BENEFITS ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_15" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_15">
+                                    Какие плюсы и минусы медиййной рекламы в сравнении с контекстной рекламаой?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--  //ANCHOR THEME ADVERTISING -->
+                <article class="options__blog options__blog--white">
+                    <div class="container">
+                        <!--     //NOTE -->
+                        <div class="options__inner">
+                            <img class="options__img" src="img/options/theme.webp" alt="theme">
+                            <div class="options__content">
+                                <span class="options__note item__note">
+                                    тематики сайтов
+                                </span>
+                                <div class="options__title-big item__title-big">
+                                    Размещайте рекламу там, где находится ваша целевая аудитория
+                                </div>
+                                <p class="options__descr item__descr">
+                                    Теперь Вы можете показывать рекламу на сайтах с нужной Вам тематикой.
+                                </p>
+                                <p class="options__descr item__descr">
+                                    Например, если вы предоставляете услуги кредитования, то Вам будет интересно размещать баннеры на сайтах с тематикой «Банки и Кредит», или на сайтах с автомобильной тематикой, если Вы продаёте автомобили или запчасти.
+                                </p>
+                                <button class="options__button button__options btn-anim">
+                                    Начать
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- //ANCHOR ACCORDION MENU -->
+                        <span class="options__question">
+                            Часто задаваемые вопросы
+                        </span>
+                        <div class="options__accord accord">
+                            <!-- //ANCHOR WHAT IS CONTEXTUAL ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_16" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_16">
+                                    Что такое контекстная реклама?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR FAQ ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_17" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_17">
+                                    Чем полезна контекстная реклама?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR WHAT IS CTR ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_18" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_18">
+                                    Что такое CTR и важен ли он?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--  //ANCHOR INTRESTING ADVERTISING -->
+                <article class="options__blog options__blog--grey">
+                    <div class="container">
+                        <!--     //NOTE -->
+                        <div class="options__inner">
+                            <img class="options__img" src="img/options/interesting.webp" alt="intersting">
+                            <div class="options__content">
+                                <span class="options__note item__note">
+                                    реклама по интересам
+                                </span>
+                                <div class="options__title-big item__title-big">
+                                    Транслируйте рекламу на тех, кто проявляет интерес
+                                </div>
+                                <p class="options__descr item__descr">
+                                    С помощью данного типа рекламы Вы сможете таргетировать Ваши объявления на людей, которые проявляют постоянный интерес в определённой сфере.
+                                </p>
+                                <p class="options__descr item__descr">
+                                    Например, если человек часто просматривает сайты, каналы или блоги, посвящённые косметике, то он попадает в группу интересов «Красота и Здоровье».
+                                </p>
+                                <button class="options__button button__options btn-anim">
+                                    Начать
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- //ANCHOR ACCORDION MENU -->
+                        <span class="options__question">
+                            Часто задаваемые вопросы
+                        </span>
+                        <div class="options__accord accord">
+                            <!-- //ANCHOR WHAT IS CONTEXTUAL ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_19" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_19">
+                                    По какому принципу будут показываться мои объявления?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR FAQ ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_20" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_20">
+                                    Где будет показана медийная реклама?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                            <!-- //ANCHOR WHAT IS CTR ACCORDION -->
+                            <div class="accord__item">
+                                <input class="accord__input" id="accord_21" type="checkbox">
+                                <span class="accord__visible-checkbox">
+                                    плюс/минус
+                                </span>
+                                <label class="accord__trigger item__title" for="accord_21">
+                                    Какие плюсы и минусы медийной рекламы в сравнении с контекстной рекламы?
+                                </label>
+                                <div class="accord__content">
+                                    Если вы думаете, что это очень сложно, то это не так. Личный кабинет, а также специалисты adnous, предоставляют пошаговую инструкцию по запуску кампании. Технически, вы будете должны установить наш код на все страницы вашего сайта. Когда ваш пользователь
+                                    откроет страницу с размещенным кодом, он создаст специальный coockie-файл, который будет помещен в браузер вашего пользователя. По этому файлу мы сможем идентифицировать пользователя на площадках и показывать рекламу.
+                                    Вторая функция кода - осуществлять анализ рекламного клика после перехода, а именно сопоставлять поведенческие факторы. Это позволяет нам исключать недобросовестные клики и экономить ваши деньги.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--  //SECTION FAST REGISTRATION -->
+            <section class="fast-reg">
+                <div class="container">
+                    <div class="fast-reg__inner">
+                        <span class="fast-reg__note item__note">
+                            Готов к взрывному росту продаж?
+                        </span>
+                        <div class="fast-reg__title item__title-big">
+                            Зарегистрируйся в ADNous!
+                        </div>
+                        <div class="fast-reg__reg-blog reg-blog">
+                            <form class="reg-blog__form">
+                                <span class="reg-blog__title item__title">
+                                    Быстрая регистрация
+                                </span>
+                                <input class="reg-blog__input" id="fname" type="text" placeholder="Имя">
+                                <input class="reg-blog__input" id="lname" type="text" placeholder="Компания">
+                                <input class="reg-blog__input" id="email" type="email" placeholder="E-Maill">
+                                <input class="reg-blog__input" id="password" type="password" placeholder="Пароль">
+                                <input class="reg-blog__input" id="password-second" type="password" placeholder="Повторите пароль">
+
+                                <label class="reg-blog__label" for="checkbox">
+                                    <input class="reg-blog__checkbox" id="checkbox" type="checkbox">
+                                    <span class="reg-blog__check">
+                                        Голочка
+                                    </span>
+                                    Я принимаю условия
+                                    <a class="reg-blog__lic-link" href="#">
+                                        Оферты на оказание услуг
+                                    </a>
+                                </label>
+
+                                <span class="reg-blog__btn-box">
+                                    <button class="reg-blog__button button__register btn-anim">
+                                        Получить доступ
+                                    </button>
+                                    <span class="reg-blog__consult">
+                                        <span class="reg-blog__consult-text">
+                                            получить консультацию
+                                        </span>
+                                <a href="tel:70000000885" class="reg-blog__consult-phone">
+                                            + 7 (555) 000-00-00
+                                        </a>
+                                </span>
+                                </span>
+
+                                <a class="reg-blog__already-link" href="#">
+                                    У меня уже есть аккаунт в ADNous
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- //FOOTER SECTION  -->
+    <footer class=" footer ">
+        <!-- //NOTE FOOTER CONTENT -->
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+                    <!--  //ANCHOR FOOTER CASES -->
+                    <div class="footer__case">
+                        <h3 class="footer__title">
+                            Кейсы
+                        </h3>
+                        <ul class="footer__menu">
+                            <li class="footer__item ">
+                                <a class="footer__link anim-link " href="#">
+                                    Интернет магазин
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Недвижимость и строительство
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Автомобильный бизнес
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Сфера услуг В2В и В2С
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Государственная структура
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    У меня другой бизнес
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--  //ANCHOR FOOTER ABOUT SERVICE -->
+                    <div class="footer__service">
+                        <h3 class="footer__title">
+                            о сервисе
+                        </h3>
+                        <ul class="footer__menu">
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Цены
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Наша история
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Реквизиты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--  //ANCHOR FOOTER ABOUT DOCUMENT -->
+                    <div class="footer__document">
+                        <h3 class="footer__title">
+                            документы
+                        </h3>
+                        <ul class="footer__menu">
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Политика конфиденциальности
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Документация
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link anim-link" href="#">
+                                    Оферта
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--  //ANCHOR FOOTER ABOUT CONTACT -->
+                    <div class="footer__contact">
+                        <h3 class="footer__title">
+                            Контакты
+                        </h3>
+                        <a class="footer__contact-location anim-link" href="#">
+                            <i class="footer__contact-icon fas fa-map-marker-alt"></i> 555555, Хоторн, Калифорния, США
+                        </a>
+                        <a class="footer__contact-phone anim-link" href="tel:700055500055">
+                            <i class="footer__contact-icon fas fa-phone"></i> + 7 (555) 000-00-00
+                        </a>
+                        <a class="footer__contact-email anim-link" href="mailto:support@adnous.ru">
+                            <i class="footer__contact-icon footer__contact-icon fas fa-at"></i> support@adnous.ru
+                        </a>
+                        <!-- //ANCHOR FOOTER SOCIAL LINKS -->
+                        <div class=" footer__social-link social-link ">
+
+                            <a class="social-link__item" href="#">
+                                <i class="social-link__icon fab fa-facebook-f"></i> facebook
+                            </a>
+
+                            <a class="social-link__item" href="#">
+                                <i class="social-link__icon fab fa-vk"></i> VKontakte
+                            </a>
+
+                            <a class="social-link__item" href="#">
+                                <i class="social-link__icon fab fa-instagram"></i> Instagram
+                            </a>
+
+                            <a class="social-link__item" href="#">
+                                <i class="social-link__icon fab fa-youtube"></i> Youtube
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--  //NOTE FOOTER COPYWRITE -->
+        <div class="footer__copyright copyright">
+            <div class="container">
+                <div class="copyright__inner">
+                    <a class="copyright__link" href="#">
+                        <img class="copyright__logo" src="img/logo-color.webp" alt="adnous-color-logo">
+                    </a>
+                    <span class="copyright__text">
+                        © 2011-2020 Все права защищены
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--  //NOTE UP BOTTON -->
+    <div id="upbutton">
+        <i class=" upbutton-arrow fal fa-chevron-up "></i> into the space
+    </div>
+    <script src=" js/libs.min.js "></script>
+    <script src=" js/script.js "></script>
+</body>
+
+</html>
