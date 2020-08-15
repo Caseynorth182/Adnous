@@ -1,6 +1,11 @@
 $(function() {
     $('.fancybox').fancybox({
         padding: 0, //убираем отступ
+        youtube: {
+            controls: 0,
+            showinfo: 0
+        },
+
         helpers: {
             overlay: {
                 locked: false // отключаем блокировку overlay
@@ -72,13 +77,10 @@ $(function() {
         });
     })(jQuery);
 
-    //VIDEO BUTTON CONTROLL -- LEFT SIDE VIDEO
-    $('#left-video__btn').on('click', function() {
-        $('.video__link--left').click()
-    });
-    //VIDEO BUTTON CONTROLL -- RIGHT SIDE VIDEO
-    $('#right-video__btn').on('click', function() {
-        $('.video__link--right').click()
+    //VIDEO BUTTON CONTROLL --  VIDEO- BUTTON
+    $('.button__play-video').on('click', function() {
+        $(this).closest('.recomended__inner').find('.video__link').click();
+        $(this).closest('.review__inner').find('.video__link').click();
     });
 
     //UPBUTTON 

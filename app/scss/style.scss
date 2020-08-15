@@ -1497,6 +1497,71 @@
     }
 }
 
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                      //SECTION BUSINESS _ REVIEWS PAGE                     */
+
+
+/* -------------------------------------------------------------------------- */
+
+.review {
+    &__blog {
+        padding: 80px 0;
+        &--white {
+            background-color: $white;
+        }
+        &--grey {
+            background-color: rgba(235, 247, 252, 0.5);
+        }
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content {
+        max-width: 470px;
+        width: 100%;
+        padding: 50px 0;
+    }
+    &__button {
+        display: block;
+        margin-top: 50px;
+    }
+    &__title {
+        font-size: 26px;
+        padding: 50px 50px 40px 0;
+    }
+    &__feedback {
+        color: rgb(0, 147, 255);
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+    &__icon {
+        font-size: 25px;
+        margin: 0 35px;
+        color: rgb(0, 147, 255);
+    }
+    .video {
+        position: relative;
+        display: flex;
+        max-width: 600px;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        &:hover .video__play-btn {
+            border-color: transparent transparent transparent rgba(1, 165, 194, 0.8);
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+}
+
 // -----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE
