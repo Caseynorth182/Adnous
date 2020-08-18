@@ -1,10 +1,9 @@
 .button {
     display: block;
-    border-radius: 20px;
-    border: none;
     transition: all 0.3s;
     cursor: pointer;
     &__login-links {
+        border-radius: 20px;
         min-width: 79px;
         padding: 11px 20px 9px;
         color: $white;
@@ -23,7 +22,8 @@
     &__contact,
     &__play-video,
     &__register,
-    &__options {
+    &__options,
+    &__consult {
         display: inline-block;
         position: relative;
         max-width: 229px;
@@ -55,7 +55,13 @@
     &__play-video {
         background-color: rgb(11, 215, 252);
         color: $white;
-        border: none;
+    }
+    &__consult {
+        padding: 14px 35px;
+        max-width: 160px;
+        &:before {
+            display: none;
+        }
     }
 }
 
