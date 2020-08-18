@@ -83,8 +83,18 @@ $(function() {
         $(this).closest('.recomended__inner').find('.video__link').click();
         $(this).closest('.review__inner').find('.video__link').click();
     });
-
-    //UPBUTTON 
+    //PAGINATION SCRIPT
+    $('#pagination-container').pagination({
+            dataSource: [1, 2, 3, 4, 5, 6, 7],
+            pageSize: 1,
+            pageRange: null,
+            showPageNumbers: true,
+            callback: function(data, pagination) {
+                var html = template(data);
+                $('#data-container').html(html);
+            }
+        })
+        //UPBUTTON 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             if ($('#upbutton').is(':hidden')) {
