@@ -813,6 +813,7 @@
     position: relative;
     min-height: 916px;
     padding: 87px 0 0;
+    overflow-x: hidden;
     &:before {
         content: "";
         position: absolute;
@@ -886,6 +887,9 @@
         display: inline-block;
     }
 }
+
+
+/* //ANCHOR RECOMENDED VIDEO STYLES */
 
 .recomended__video .video {
     &__img {
@@ -1385,10 +1389,7 @@
 .options {
     &__blog {
         padding: 86px 0 81px;
-        &--white {
-            background-color: $white;
-        }
-        &--grey {
+        &:nth-child(odd) {
             background-color: rgba(235, 247, 252, 0.5);
         }
     }
@@ -1431,6 +1432,12 @@
         text-align: left;
         font-weight: 700;
         font-size: 18px;
+        &--big {
+            color: $darktext;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 20px;
+        }
     }
     //accordion accord
 }
@@ -1441,6 +1448,12 @@
     padding-left: 50px;
     &__item {
         margin-bottom: 40px;
+    }
+    &__list-item {
+        color: $dark;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
     }
     &__visible-checkbox {
         position: absolute;
@@ -1508,11 +1521,8 @@
 
 .review {
     &__blog {
-        padding: 80px 0;
-        &--white {
-            background-color: $white;
-        }
-        &--grey {
+        padding: 80px 0 160px;
+        &:nth-child(even) {
             background-color: rgba(235, 247, 252, 0.5);
         }
     }
@@ -1537,7 +1547,6 @@
         color: rgb(0, 147, 255);
         font-size: 20px;
         font-style: italic;
-        font-weight: 400;
         line-height: 30px;
         letter-spacing: 1px;
     }
@@ -1546,19 +1555,21 @@
         margin: 0 35px;
         color: rgb(0, 147, 255);
     }
-    .video {
-        position: relative;
-        display: flex;
-        max-width: 600px;
+}
+
+//ANCHOR REVIEW VIDEO STYLES
+.review__inner .video {
+    position: relative;
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    &:hover .video__play-btn {
+        border-color: transparent transparent transparent rgba(1, 165, 194, 0.8);
+    }
+    &__img {
         width: 100%;
-        border-radius: 20px;
-        overflow: hidden;
-        &:hover .video__play-btn {
-            border-color: transparent transparent transparent rgba(1, 165, 194, 0.8);
-        }
-        &__img {
-            width: 100%;
-        }
     }
 }
 

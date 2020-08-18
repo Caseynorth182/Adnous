@@ -1,4 +1,5 @@
 $(function() {
+    new WOW().init();
     $('.fancybox').fancybox({
         padding: 0, //убираем отступ
         youtube: {

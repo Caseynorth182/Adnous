@@ -45,6 +45,8 @@ gulp.task("script", function() {
             "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
             "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js",
             "node_modules/fontawesome-pro-5.8.2-web/all.js",
+            "node_modules/wowjs/wow.js",
+            "node_modules/focus-visible/dist/focus-visible.js",
             /* "node_modules/swiper/swiper.js", */
             /* "node_modules/jquery-form-styler/dist/jquery.formstyler.js",  */
         ])
@@ -63,6 +65,7 @@ gulp.task("style", function() {
             "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css",
             "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
             "node_modules/fontawesome-pro-5.8.2-web/all.css",
+            "node_modules/wowjs/animate.css",
             /* "node_modules/swiper/swiper.css", */
             /* "node_modules/jquery-form-styler/dist/jquery.formstyler.css",  */
         ])

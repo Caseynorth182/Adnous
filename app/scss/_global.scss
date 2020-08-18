@@ -102,6 +102,13 @@ body {
     max-width: 1200px;
 }
 
+//NOTE ANIMATE JS BLOGS
+.about,
+.recomended,
+.options {
+    overflow-x: hidden;
+}
+
 //title
 .title-global {
     display: block;
