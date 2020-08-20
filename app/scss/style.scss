@@ -51,11 +51,13 @@
         }
     }
     &__subtitle {
-        width: 650px;
+        max-width: 650px;
+        width: 100%;
         color: $white;
         font-weight: 400;
         font-size: 20px;
         line-height: 27px;
+        word-wrap: break-word;
         &+& {
             padding-top: 28px;
         }
@@ -78,6 +80,7 @@
     &__company {
         list-style-type: none;
         display: flex;
+        flex-wrap: wrap;
     }
     &__company-item {
         max-width: 129px;
@@ -85,6 +88,9 @@
         &+& {
             margin-left: 35px;
         }
+    }
+    &__company-img {
+        padding-top: 10px;
     }
     &__social-btn {
         margin-top: 30px;
@@ -138,6 +144,37 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    &__burger {
+        margin-top: 5px;
+    }
+}
+
+//NOTE  BURGER MENU
+.burger {
+    display: none;
+    cursor: pointer;
+    &__item {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: $white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+}
+
+.burger.active {
+    .burger__item {
+        &:nth-child(1) {
+            transform: rotate(-45deg) translate(-8px, 6px);
+        }
+        &:nth-child(2) {
+            opacity: 0;
+        }
+        &:nth-child(3) {
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
     }
 }
 
@@ -204,7 +241,7 @@
         color: $dark;
         font-size: 16px;
         font-weight: 600;
-        transition: all 0.3s;
+        transition: visibility ease 0s, opacity ease 1s;
         &:before {
             content: "\e904";
             position: absolute;
@@ -219,6 +256,12 @@
             color: $light-blue;
         }
     }
+}
+
+//DROPDOWN ADDAPTIVE ON CLICK
+.dropdown.active {
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 
@@ -492,9 +535,11 @@
     counter-reset: section;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     &__item {
-        max-width: 350px;
+        flex-basis: 45%;
+        padding-bottom: 50px;
     }
     &__title {
         padding: 0 25px 26px 70px;
@@ -769,6 +814,7 @@
             left: -51px;
             width: 74px;
             height: 74px;
+            z-index: 2;
             &__icon {
                 font-size: 35px;
             }
@@ -828,7 +874,6 @@
         height: 916px;
         top: 0;
         right: 24%;
-        /*  display: none; */
     }
     &__descr-line {
         margin-bottom: 70px;
@@ -874,9 +919,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
     &__person {
         display: inline-block;
+        padding-bottom: 25px;
     }
     &__name {
         display: inline-block;
@@ -918,6 +965,7 @@
 /* -------------------------------------------------------------------------- */
 
 .exp-blog {
+    padding-bottom: 60px;
     &__inner {
         display: flex;
         justify-content: flex-start;
@@ -946,7 +994,7 @@
     }
     &__img {
         width: 100%;
-        max-height: 250px;
+        height: 220px;
     }
     &__link {
         display: -webkit-box;
@@ -1066,7 +1114,8 @@
         background-position: 70px 0px;
         top: -80px;
         right: 0;
-        width: 459px;
+        max-width: 459px;
+        width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
     }
