@@ -131,6 +131,7 @@ $(function() {
     } else if ($(window).width() >= 992) {
         $('.header__btns').appendTo(".header__inner");
     }
+
     //NOTE BURGER MENU
     $('.header__burger').on('click', function() {
         $('.header__burger').toggleClass('active');
@@ -141,6 +142,13 @@ $(function() {
     $(".menu__item--drop").click(function() {
         $(".dropdown").toggleClass("active");
     });
+
+    //NOTE FOOTER DROPDAWN ADAPTIVE MENU
+    $('.footer__title').on('click', function() {
+        $(this).next('.footer__menu').slideToggle(1000);
+        $(this).toggleClass('active');
+    });
+
     $('.menu').on('touchstart', function() {}); // - off custom hover effect
     //PAGINATION SCRIPT
     $('#pagination-container').pagination({
