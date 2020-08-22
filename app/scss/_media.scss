@@ -75,6 +75,32 @@
         .starts {
             padding: 100px 0 75px;
         }
+        .options {
+            &__inner {
+                flex-direction: column;
+            }
+            &__img {
+                align-self: center;
+            }
+        }
+        .review {
+            &__inner {
+                flex-direction: column;
+                .video {
+                    align-self: center;
+                }
+            }
+        }
+    }
+    /* //NOTE 1040px */
+    
+    @media only screen and (max-width: 1040px) {
+        .consult__label {
+            flex-basis: calc(50% - 45px);
+            &--big {
+                flex-basis: calc(100% - 45px);
+            }
+        }
     }
     /* //NOTE 991px */
     
@@ -215,6 +241,12 @@
         .pass__slider .slider__card {
             max-width: 100%;
         }
+        .aside {
+            display: none;
+        }
+        .blog__inner {
+            flex-direction: column;
+        }
     }
     /* //NOTE 800px */
     
@@ -242,11 +274,13 @@
                 margin-right: 0;
                 margin-left: 0;
                 align-self: flex-end;
-                &--left {}
                 &--right {
                     align-self: flex-start;
                 }
             }
+        }
+        .paginationjs {
+            display: none;
         }
     }
     /* //NOTE 768px */
@@ -349,6 +383,17 @@
                 }
             }
         }
+        .options {
+            &__img {
+                padding-bottom: 35px;
+            }
+        }
+        .review__blog {
+            padding: 40px 10px;
+            &:last-child {
+                padding-bottom: 100px;
+            }
+        }
     }
     /* //NOTE 600px */
     
@@ -400,6 +445,9 @@
         .case__item {
             flex-basis: calc(85% - 30px);
         }
+        .consult__label {
+            flex-basis: calc(100% - 45px);
+        }
     }
     /* //NOTE 538px */
     
@@ -436,6 +484,19 @@
                 font-size: 15px;
             }
         }
+        .options__blog {
+            padding: 15px 0;
+        }
+        .copyright {
+            padding: 15px 0;
+            &__inner {
+                flex-direction: column;
+            }
+            &__logo {
+                margin-right: 0;
+                padding-bottom: 15px;
+            }
+        }
     }
     /* //NOTE 375px */
     
@@ -451,6 +512,12 @@
             &__button {
                 font-size: 12px;
             }
+        }
+        .promo__content {
+            padding: 50px 0;
+        }
+        .promo__title-small {
+            padding-top: 35px;
         }
     }
     /* //NOTE 360px */
